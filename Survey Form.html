@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="C:\Users\hughe\OneDrive\Desktop\Web Dev\Survey Form Project\app.css">
 </head>
 <body>
@@ -12,44 +13,64 @@
     <p id="description">This is a sample survey form!</p>
     
     <form id="survey-form">
+
+    <div class="container">
         <label for="name" id="name-label">Name</label><br>
-        <input type="text" required id="name" name="name" placeholder="Enter Name Here"><br>
+        <input type="text" required id="name" name="name" placeholder="Enter your Name Here"><br>
+    </div>
 
+    <div class="container">
         <br><label for="email" id="email-label">Email</label><br>
-        <input type="email" required id="email" name="email" placeholder="Enter Email Here"><br>
+        <input type="email" required id="email" name="email" placeholder="Enter your Email Here"><br>
+    </div>
+    
+    <div class="container"> 
+        <br><label for="number" id="number-label">Age (optional)</label><br>
+        <input type="number" id="number" name="number" placeholder="Enter your Age Here" min="0" max="10"><br>
+    </div>
 
-        <br><label for="number" id="number-label">Number</label><br>
-        <input type="number" id="number" name="number" placeholder="Enter a Number Here" min="0" max="10"><br>
-
-        <br><label for="dropdown">Dropdown List:</label><br>
+    <div class="container">
+        <br><label for="dropdown">Which dog are you currently thinking about?</label><br>
         <select name="dropdown" id="dropdown" name="dropdown">
             <option value="Heidi">Heidi</option>
             <option value="Lacy">Lacy</option>
             <option value="Brady">Brady</option>
             <option value="Rudy">Rudy</option>
         </select><br>
+    </div>
 
-        <br><input type="radio" id="male" name="gender" value="male">
+    <div class="container">
+        <p>Please select a gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label><br>
         <input type="radio" id="other" name="gender" value="other">
         <label for="other">Other</label><br>
+    </div>
 
-        <br><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <div class="container">
+        <p>Please select a mode of transportation:</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
         <label for="vehicle1"> I have a bike</label><br>
         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
         <label for="vehicle2"> I have a car</label><br>
         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
         <label for="vehicle3"> I have a boat</label><br> 
+    </div>
 
-        <br><label for="w3review">Any comments or suggestions:</label><br>
-        <textarea id="w3review" name="w3review" rows="4" cols="50">
-        Please enter your comment here.
+    <div class="container">
+        <br><label for="commentBox">Any comments or suggestions:</label><br>
+        <textarea id="commentBox" name="commentBox" rows="4" cols="40">Please leave any comments here.
         </textarea> 
-
+    </div>
+    
+    <div class="container">
         <br><input type="submit" id="submit">
+    </div>
     </form>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>

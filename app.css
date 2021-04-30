@@ -1,13 +1,18 @@
-input[type="text"] {
-  width: 150px;
+#submit {
+  background: none;
+  color: grey;
+  border: 1.5px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
-input[type="email"] {
-  width: 150px;
-}
-
-input[type="number"] {
-  width: 150px;
+#submit:hover {
+  border-color: crimson;
+  color: black;
+  box-shadow: 0 0.5em 0.5em -0.4em darkcyan;
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
 /*These first few sections are just to even out length so placeholder text displays right
