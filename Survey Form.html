@@ -36,27 +36,50 @@
             <option value="Lacy">Lacy</option>
             <option value="Brady">Brady</option>
             <option value="Rudy">Rudy</option>
-        </select><br>
+        </select>
     </div>
 
     <div class="container">
         <p>Please select a gender:</p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="male-radio" id="male-radio">
+            <label class="form-check-label" for="male-radio">
+              Male
+            </label>
+          </div>
+        
+        <div class="form-check">   
+            <input class="form-check-input" type="radio" name="female-radioe" id="female-radio">
+            <label class="form-check-label" for="female-radio">
+                Female
+            </label>
+          </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="other-radio" id="other-radio">
+            <label class="form-check-label" for="other-radio">
+                Other
+            </label>
+          </div>
     </div>
 
     <div class="container">
         <p>Please select a mode of transportation:</p>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br> 
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label class="form-check-label" for="vehicle1"> I have a bike</label><br>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label class="form-check-label" for="vehicle2"> I have a car</label><br>
+        </div>
+
+        <div>
+            <input class="form-check-input" type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label class="form-check-label" for="vehicle3"> I have a boat</label><br> 
+        </div>
     </div>
 
     <div class="container">
