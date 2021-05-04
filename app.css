@@ -15,5 +15,12 @@
   cursor: pointer;
 }
 
-/*These first few sections are just to even out length so placeholder text displays right
-    The placeholder for number was getting cut off for some reason */
+h1 {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+/* I want to center the form, throw in some margins, and some sort of background*/
