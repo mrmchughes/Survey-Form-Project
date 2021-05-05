@@ -23,4 +23,49 @@ h1 {
   text-align: center;
 }
 
+.custom-centered {
+  margin: 0 auto;
+  width: 300px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+input[type="email"] {
+  width: 300px;
+}
+
+input[type="number"] {
+  width: 300px;
+}
+
+#dropdown {
+  width: 150px;
+}
+
+#name-container {
+  padding-bottom: 20px;
+}
+
+#email-container {
+  padding-bottom: 20px;
+}
+
+#number-container {
+  padding-bottom: 20px;
+}
+
+#dog-container {
+  padding-bottom: 20px;
+}
+
+#gender-container {
+  padding-bottom: 20px;
+}
+
 /* I want to center the form, throw in some margins, and some sort of background*/

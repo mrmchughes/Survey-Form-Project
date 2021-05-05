@@ -12,25 +12,25 @@
 
     <p id="description">This is a sample survey form!</p>
     
-    <form id="survey-form">
+    <form id="survey-form" class="custom-centered">
 
-    <div class="container">
-        <label for="name" id="name-label">Name</label><br>
-        <input type="text" required id="name" name="name" placeholder="Enter your Name Here"><br>
+    <div class="container" id="name-container">
+        <label for="name" id="name-label" required>Name</label>
+        <input type="text" required id="name" name="name" placeholder="Enter your Name Here...">
     </div>
 
-    <div class="container">
-        <br><label for="email" id="email-label">Email</label><br>
-        <input type="email" required id="email" name="email" placeholder="Enter your Email Here"><br>
+    <div class="container" id="email-container">
+        <label for="email" id="email-label" required>Email</label>
+        <input type="email" required id="email" name="email" placeholder="Enter your Email Here...">
     </div>
     
-    <div class="container"> 
-        <br><label for="number" id="number-label">Age (optional)</label><br>
-        <input type="number" id="number" name="number" placeholder="Enter your Age Here" min="0" max="10"><br>
+    <div class="container" id="number-container"> 
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number" name="number" placeholder="Enter your Age Here..." min="1" max="100">
     </div>
 
-    <div class="container">
-        <br><label for="dropdown">Which dog are you currently thinking about?</label><br>
+    <div class="container" id="dog-container">
+        <label for="dropdown">Which dog are you currently thinking about?</label><br>
         <select name="dropdown" id="dropdown" name="dropdown">
             <option value="Heidi">Heidi</option>
             <option value="Lacy">Lacy</option>
@@ -39,7 +39,7 @@
         </select>
     </div>
 
-    <div class="container">
+    <div class="container" id="gender-container">
         <p>Please select a gender:</p>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="male-radio" id="male-radio">
@@ -63,7 +63,7 @@
           </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="transportation-container">
         <p>Please select a mode of transportation:</p>
 
         <div class="form-check">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="comments-container">
         <br><label for="commentBox">Any comments or suggestions:</label><br>
         <textarea id="commentBox" name="commentBox" rows="4" cols="40">Please leave any comments here.
         </textarea> 
